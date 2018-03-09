@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.nishant.nsh.new_toolbar.MainActivity">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="ThisIsNSH"
+        android:textStyle="bold"
+        android:textSize="25dp"
+
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-smallcaps"
+        android:elevation="5dp"
+        android:textColor="#fff"
+        android:id="@+id/d"
+        android:layout_height="wrap_content" />
+
+
+<!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:foreground="@drawable/gradient1"
+        android:elevation="1dp"
+        android:rotation="90"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/a"
+
+            android:background="@color/colorPrimary">
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/colorPrimary"/>
+    </LinearLayout>
+-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:foreground="@drawable/gradient"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/a"
+
+        android:background="@color/colorPrimary">
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorPrimary"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:elevation="2dp"
+      android:layout_width="1000dp"
+      android:layout_height="150dp"
+      android:id="@+id/rotated"
+      android:layout_marginTop="130dp"
+      android:rotation="-15"
+
+      android:scaleX="100"
+      android:animateLayoutChanges="true"
+      android:background="#fff"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Boom!"
+        android:id="@+id/boom"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="32dp"
+        android:textColor="#fff"
+        android:backgroundTint="@color/colorPrimary"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Revert!"
+        android:id="@+id/boom1"
+        android:gravity="center"
+android:layout_above="@id/boom"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="32dp"
+        android:textColor="#fff"
+        android:backgroundTint="@color/colorPrimary"/>
+</RelativeLayout>
